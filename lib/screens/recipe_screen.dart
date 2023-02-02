@@ -33,7 +33,7 @@ class _RecipeScreenState extends State<RecipeScreen> {
           child: BlocBuilder<GetRecipeCubit, GetRecipeState>(
             builder: (context, state) {
               if (state is GetRecipeLoading) {
-                return CircularProgressIndicator();
+                return Center(child: CircularProgressIndicator());
               }
               if (state is GetRecipeLoaded) {
                 final List<RecipesModel> recipes = state.recipes;
