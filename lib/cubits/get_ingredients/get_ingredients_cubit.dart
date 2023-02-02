@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:tech_task/models/ingredients_model.dart';
-import 'package:tech_task/services/get_ingredients_services.dart';
+import 'package:tech_task/services/services.dart';
 
 part 'get_ingredients_state.dart';
 

@@ -1,7 +1,10 @@
 part of 'get_recipe_cubit.dart';
 
 @immutable
-abstract class GetRecipeState {}
+abstract class GetRecipeState extends Equatable {
+  @override
+  List<Object> get props => [];
+}
 
 class GetRecipeInitial extends GetRecipeState {}
 
